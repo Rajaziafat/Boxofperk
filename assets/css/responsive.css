@@ -1,0 +1,364 @@
+@media all and (max-width: 1399px){
+	.banner_text h1 {
+		font-size: 48px;
+		line-height: 62px;
+	}
+	.how_it_work_single_items:not(:last-child):before {		
+		right: -21%;		
+		width: 18%;	
+	}
+}
+
+@media all and (min-width: 1200px){
+	.main_menu{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex ;
+		display: block !important;
+	}
+	.show_mobile{
+		display: none !important;
+	}
+}
+
+
+@media all and (max-width: 1199px){
+	.mobile-menu-icon{
+		display: block !important;
+		width: 25%;
+	}
+	.main_menu{
+		display: none;
+	}
+	.menu_right_button ul li:not(:last-child){
+		display: none;
+	}
+	.menu_right_button ul {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: end;
+	}
+	.logo{
+		text-align: center;
+		width: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.logo a{
+		text-align: center;
+	}
+	.logo a img{
+		width: 170px;
+	}
+	.main_menu {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: auto;
+		left: 0;
+		right: 0;
+		background: #E5E5E5;
+		border-radius: 10px;
+		box-shadow: 0 2px 15px #0000000d;
+		padding: 30px;
+	}
+	.main_menu ul{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	.main_menu ul li {
+		margin-left: 0px;
+		padding: 12px;
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+	}
+	.header_area:before {
+		max-width: 130px;
+		height: 92px;
+	}
+	.show_mobile {
+		width: 100%;
+	}
+	.show_mobile .login {
+		background: #fff;
+	}
+	.show_mobile ul{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.show_mobile ul li{
+		display: block !important;
+		width: 100%;
+		width: 140px;
+		border-bottom: 0;
+	}
+	.banner_text h1 {
+		font-size: 40px;
+		line-height: 47px;
+	}
+	.banner_area {
+		padding: 60px 0 60px;
+	}
+	.how_it_work_single_items {
+		max-width: 245px;
+		height: 245px;
+	}
+	.how_it_work_single_items:not(:last-child):before {
+		display: none;
+	}
+	.feature_text h4 a {
+		font-size: 19px;
+	}
+	.features_items_content {
+		padding: 45px 18px;
+	}
+	.about-area {
+		padding: 40px 0;
+	}
+	h2.blog_title a {
+		font-size: 26px;
+	}
+	.blog_content {
+		padding: 40px 30px;
+	}
+	.it-work-content span {
+		top: 12%;
+	}
+}
+
+@media all and (max-width: 991px){
+	.footer-left_Three,
+	.footer-right{
+		margin-top: 30px;	
+	}
+	.blog_content{
+		margin-top: 30px;
+	}
+	.about-image {
+		margin-bottom: 50px;
+	}
+	.about-area:after {
+		bottom: 0;
+		top: unset;
+	}
+	.how_it_work_items {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.how_it_work_single_items {
+		max-width: 275px;
+		height: 275px;
+		margin-bottom: 30px;
+	}
+	.features_itmes {
+		margin-top: 30px;
+	}
+	.banner_row{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+	}
+	.about-tontent h2 {
+		font-size: 45px;
+		line-height: 58px;
+		margin-bottom: 24px;
+	}
+	.banner_image{
+		margin: 0 auto;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.banner_image img {
+		width: 80%;
+		text-align: center;
+	}
+	.contactus_area {
+		padding: 60px 0;
+	}
+	.how_it_work_items {
+		padding: 30px 0 0px;
+	}
+	.features_items_row {
+		padding: 11px 0;
+	}
+	.contact-inf ul li span.contact_us_txt {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	.contact-inf ul li span {
+		font-size: 26px;
+		line-height: 38px;
+		margin-bottom: 0px;
+	}
+}
+
+@media all and (max-width: 767px){
+	.contactus_area {
+		padding: 40px 0;
+	}
+	.section_heading h2 {
+		font-size: 38px;
+		line-height: 46px;	
+	}
+	.section_heading p {
+		font-size: 18px;
+	}
+	.how_it_work_items {
+		padding-bottom: 10px;
+	}
+	.features_items_row {
+		padding: 10px 0;
+	}
+	.about-tontent h2 {
+		font-size: 46px;		
+	}
+	.contact-inf ul li span {
+		font-size: 26px;		
+		line-height: 25px;
+	}
+	.contact-inf ul li p, .contact-inf ul li a {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.banner_area {
+		padding: 40px 0 25px;
+	}
+	.blog_row {
+		padding: 15px 0;
+	}
+	.our_partner_logo {
+		padding-bottom:15px;
+	}
+	.footer-left_Two{
+		margin-top: 30px;
+	}
+	.common_ft h4 {
+		margin-bottom: 10px;
+	}
+	.footer-area{
+		text-align: center;
+	}
+	.footer-right ul {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
+
+@media all and (max-width: 575px){
+	.logo a img {
+		width: 150px;
+	}
+	.mobile-menu-icon {
+		width: 20%;
+	}
+	.banner_text h1 {
+		font-size: 34px;
+		line-height: 41px;
+	}
+	.banner_text p {
+		font-size: 16px;
+		line-height: 23px;
+	}
+	.section_heading h2 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.section_heading p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+	.how_it_work_items {
+		padding: 35px 0;
+		padding-bottom: 0;
+	}
+	.about-tontent h2 {
+		font-size: 36px;
+		margin-bottom: 5px;
+	}
+	.about-tontent p {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+	.contact-inf ul li span.contact_us_txt {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.contact-inf ul li span {
+		font-size: 24px;
+	}
+	.contact-inf ul li {
+		margin-bottom: 18px;
+	}
+
+
+}
+@media all and (max-width: 413px){
+	.logo a img {
+		width: 120px;
+	}
+	.banner_text h1 {
+		font-size: 25px;
+		line-height: 28px;
+	}
+	.banner_spaciel_text p {
+		margin-top: 9px;
+		font-size: 13px !important;
+	}
+	.how_it_work_single_items {		
+		margin-bottom: 20px;
+	}
+	.section_padding {
+		padding: 30px 0;
+	}
+	.contact-inf ul li span.contact_us_txt {
+		font-size: 28px;
+		line-height: 34px;
+	}
+	.contact-inf ul li p, .contact-inf ul li a {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.contact-inf ul li {
+		margin-bottom: 22px;
+	}
+	.contact-inf ul li span {
+		font-size: 22px;
+		line-height: 20px;
+	}
+	.section_heading h2 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.about-tontent h2 {
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+	h2.blog_title a {
+		font-size: 22px;
+	}
+	.how_it_work_single_items {
+		max-width: 240px;
+		height: 240px;
+	}
+	.it-work-content span{
+		font-size: 120px;
+		left: -38px;
+	}
+}
