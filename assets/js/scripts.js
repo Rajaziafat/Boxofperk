@@ -37,3 +37,16 @@ $(document).ready(function(){
 		$('.main_menu').slideToggle(300);
 	});
 })
+
+$(window).scroll(function(){
+	var scrollvalue = $(this).scrollTop();
+
+	// sticky
+	if(scrollvalue>120){
+		$('header').addClass('sticky');
+	}else{
+		$('header').removeClass('sticky');
+		
+	}
+});
+

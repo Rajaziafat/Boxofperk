@@ -1,4 +1,4 @@
-/*==============================================
+==============================================
  					Global Style 
 ==============================================*/
 *{
@@ -11,6 +11,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background: #fff;
 	overflow-x: hidden;
+}
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden !important;
 }
 ul,p{
 	margin: 0;
@@ -214,9 +218,17 @@ img{
 	background: #fff !important;
 	color: #000 !important;
 }
-
-
-
+.sticky {
+	position: fixed;
+	background: #ffffff;
+	padding: 15px;
+	z-index: 99999;
+	box-shadow: 0 5px 15px #00000029;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
 /* mobile_humbar */
 /* Mobile Menu */
 .all-p-humber {
@@ -749,3 +761,203 @@ h2.blog_title a{
 .footer-right ul li:last-child a{
 	background: #2797CF;
 }
+/*========================================================
+=============START PRODUCT.HTML PAGES CSS ================
+========================================================*/
+.product_banner {
+	margin-top: 65px;
+}
+.product_banner .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.product_select_area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-top: 50px;
+}
+.left_pd_select , .right_pd_select{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.pd_category h3, .product_list_count h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	margin-right: 10px;
+}
+.pro_select_options .form-select {
+	width: 350px;
+	display: block;
+	border: 1px solid #808080;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.left_pd_select {
+	margin-right: 90px;
+}
+.form-select:focus {
+	border-color: #F4B65F;
+	outline: 0;
+	box-shadow: none;
+}
+.product_list_count {
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 70px;
+}
+/*product items css*/
+.pro_box_logo {
+	background: #E8E8E8;
+	border-radius: 15px 15px 0px 0px;
+	height: 175px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.pro_box_logo a {
+	display: block;
+	max-width: 115px;
+	width: 100%;
+	margin: auto;
+}
+.single_pro_items {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 calc(16.66% - 10px);
+	        flex: 0 0 calc(16.66% - 10px);
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.pro_details {
+	background: #FFFFFF;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 15px 15px;
+	padding: 12px 14px 10px;
+}
+.pro_details h4{
+	font-weight: 700;
+	font-size: 15px;
+	color: #000;
+}
+.pd_product_content_area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.pro_details p {
+	color: #605F5F;
+	font-size: 13px;
+	font-weight: 400;
+}
+.comon_pro_side {
+	position: relative;
+	margin-bottom: 200px;
+}
+.comon_pro_side:after {
+	position: absolute;
+	content: "";
+	width: 180px;
+	height: 100%;
+	right: 0;
+	background: url('../images/work-shap.png')no-repeat scroll 0 0 / cover;
+	bottom: -260px;
+	z-index: -1;
+}
+.comon_pro_side:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 50%;
+	width: 152px;
+	height: 350px;
+	background: url('../images/about-shap.png')no-repeat scroll 0 0 / cover;
+	z-index: -1;
+}
+
+/*========================================================
+=============END PRODUCT.HTML PAGES CSS ================
+========================================================*/
+
+
+
+/*========================================================
+============= START WORK.HTML PAGES CSS  ================
+========================================================*/
+.how_work_heading h2 {
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 68px;
+	color: #EC6545;
+	max-width: 610px;
+	width: 100%;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+.how_work_heading p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #808080;
+	max-width: 600px;
+	width: 100%;
+}
+.how_work_heading p span {
+	display: block;
+}
+.how_work_heading a {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+	color: #F4B65F;
+	display: inline-block;
+	margin-top: 55px;
+}
+.how_it_works_area {
+	padding-bottom: 250px;
+}
+.how_it_works_area.comon_pro_side:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 30%;
+	width: 152px;
+	height: 350px;
+	background: url('../images/about-shap.png')no-repeat scroll 0 0 / cover;
+	z-index: -1;
+}
+.how_it_works_area.comon_pro_side:after {
+	position: absolute;
+	content: "";
+	width: 180px;
+	height: 100%;
+	right: 0;
+	background: url('../images/work-shap.png')no-repeat scroll 0 0 / cover;
+	bottom: -100px;
+	z-index: -1;
+}
+/*========================================================
+=============  END WORK.HTML PAGES CSS    ================
+========================================================*/
+
+
+
+
+
+

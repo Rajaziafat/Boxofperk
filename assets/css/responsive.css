@@ -136,6 +136,22 @@
 	.it-work-content span {
 		top: 12%;
 	}
+	/*product pages css*/
+	.single_pro_items {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 calc(25% - 10px);
+		        flex: 0 0 calc(25% - 10px);
+	}
+	.product_select_area {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.left_pd_select {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
 
 @media all and (max-width: 991px){
@@ -205,6 +221,17 @@
 		line-height: 38px;
 		margin-bottom: 0px;
 	}
+	/*product pages css*/
+	.single_pro_items {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 calc(33.33% - 10px);
+		        flex: 0 0 calc(33.33% - 10px);
+	}
+	/*works pages css*/
+	.how_work_heading h2 {
+		font-size: 45px;
+		line-height: 50px;
+	}
 }
 
 @media all and (max-width: 767px){
@@ -258,6 +285,21 @@
 		    -ms-flex-pack: center;
 		        justify-content: center;
 	}
+	/*product pages css*/
+	.single_pro_items {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 calc(50% - 10px);
+		        flex: 0 0 calc(50% - 10px);
+	}
+	/*works pages css*/
+	.how_it_works_area.comon_pro_side:before {
+		width: 119px;
+		background-size: 100%;
+	}
+	.how_it_works_area.comon_pro_side:after {
+		width: 120px;
+		background-size: 100%;
+	}
 }
 
 @media all and (max-width: 575px){
@@ -306,8 +348,55 @@
 	.contact-inf ul li {
 		margin-bottom: 18px;
 	}
+	/*product pages css*/
+	.pro_select_options .form-select {
+		width: 245px;
+	}
+	/*works pages*/
+	.how_work_heading h2 {
+		font-size: 35px;
+	}
+	.how_it_works_area.comon_pro_side:after {
+		display: none;
+	}
+	.how_it_works_area.comon_pro_side:before {
+		display: none;
+	}
 
 
+}
+@media all and (max-width: 450px) {
+	.left_pd_select, .right_pd_select {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.pd_category h3, .product_list_count h3 {
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+	.single_pro_items {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 calc(100% - 10px);
+		        flex: 0 0 calc(100% - 10px);
+		margin-bottom: 30px
+	}
+	.product_banner {
+		margin-top: 35px;
+	}
+	/*work pages css*/
+	.how_work_heading h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.how_work_heading {
+		width: 95%;
+		margin: auto;
+	}
+	.how_it_works_area {
+		padding-bottom: 0;
+	}
 }
 @media all and (max-width: 413px){
 	.logo a img {
@@ -361,4 +450,5 @@
 		font-size: 120px;
 		left: -38px;
 	}
+
 }
