@@ -1,4 +1,4 @@
-==============================================
+/*==============================================
  					Global Style 
 ==============================================*/
 *{
@@ -101,7 +101,7 @@ img{
 	padding: 15px 0;
 	z-index: 299;
 }
-.header_area:before {
+.header_area::before {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -110,7 +110,32 @@ img{
 	height: 115px;
 	background: url('../images/header-top-shap.png')no-repeat scroll 0 0 / cover;
 	width: 100%;
+	animation: scrolldown 1.2s ease-in-out infinite 0.15s;
 }
+
+
+
+/*---------- animation ----------*/
+.header_area::before{
+  transform: translateY(0%);
+  
+                opacity: 0.8;
+}
+@keyframes scrolldown {
+            0%{
+                transform: translateY(20%) ;
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(0%) ;
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(20%);
+                opacity: 1;
+            }
+        }
+
 .header_content{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -118,9 +143,9 @@ img{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: flex-end;
+	    -ms-flex-align: flex-end;
+	        align-items: flex-end;
 	position: relative;
 }
 .logo{
@@ -396,16 +421,7 @@ img{
 	border-radius: 50%;
 	position: relative;
 }
-.how_it_work_single_items:not(:last-child):before {
-	position: absolute;
-	content: "";
-	right: -42%;
-	top: 50%;
-	width: 37%;
-	height: 4px;
-	z-index: 2;
-	border: 2px dashed #808080;
-}
+
 .wrk_span_one{
 	left: -35px !important;
 }
@@ -724,6 +740,21 @@ h2.blog_title a{
 	color: #F4B65F;
 }
 
+.footer-left_Three ul li{
+	margin-bottom: 12px;
+}
+.footer-left_Three ul li a{
+	color: #605F5F;
+	font-size: 16px;
+	font-weight: 400;
+}
+.footer-left_Three ul li a i{
+	margin-right: 15px;
+}
+.footer-left_Three ul li a:hover{
+	color: #F4B65F;
+}
+
 .footer-right ul{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -836,8 +867,8 @@ h2.blog_title a{
 }
 .single_pro_items {
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 calc(16.66% - 10px);
-	        flex: 0 0 calc(16.66% - 10px);
+	-ms-flex: 0 0 calc(20% - 10px);
+	    flex: 0 0 calc(20% - 10px);
 	margin: 0 auto;
 	margin-bottom: 50px;
 }
@@ -877,6 +908,8 @@ h2.blog_title a{
 	background: url('../images/work-shap.png')no-repeat scroll 0 0 / cover;
 	bottom: -260px;
 	z-index: -1;
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
 .comon_pro_side:before {
 	position: absolute;
@@ -887,6 +920,8 @@ h2.blog_title a{
 	height: 350px;
 	background: url('../images/about-shap.png')no-repeat scroll 0 0 / cover;
 	z-index: -1;
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
 
 /*========================================================

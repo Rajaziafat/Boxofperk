@@ -3,10 +3,6 @@
 		font-size: 48px;
 		line-height: 62px;
 	}
-	.how_it_work_single_items:not(:last-child):before {		
-		right: -21%;		
-		width: 18%;	
-	}
 }
 
 @media all and (min-width: 1200px){
@@ -115,9 +111,7 @@
 		max-width: 245px;
 		height: 245px;
 	}
-	.how_it_work_single_items:not(:last-child):before {
-		display: none;
-	}
+
 	.feature_text h4 a {
 		font-size: 19px;
 	}
@@ -139,8 +133,8 @@
 	/*product pages css*/
 	.single_pro_items {
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 calc(25% - 10px);
-		        flex: 0 0 calc(25% - 10px);
+		    -ms-flex: 0 0 calc(33.33% - 10px);
+		        flex: 0 0 calc(33.33% - 10px);
 	}
 	.product_select_area {
 		-webkit-box-orient: vertical;
@@ -299,6 +293,14 @@
 	.how_it_works_area.comon_pro_side:after {
 		width: 120px;
 		background-size: 100%;
+	}
+	
+	.footer-left_Three ul li {
+		max-width: 140px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		text-align: left;
 	}
 }
 
