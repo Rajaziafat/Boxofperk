@@ -101,40 +101,7 @@ img{
 	padding: 15px 0;
 	z-index: 299;
 }
-.header_area::before {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	max-width: 165px;
-	height: 115px;
-	background: url('../images/header-top-shap.png')no-repeat scroll 0 0 / cover;
-	width: 100%;
-	animation: scrolldown 1.2s ease-in-out infinite 0.15s;
-}
 
-
-
-/*---------- animation ----------*/
-.header_area::before{
-  transform: translateY(0%);
-  
-                opacity: 0.8;
-}
-@keyframes scrolldown {
-            0%{
-                transform: translateY(20%) ;
-                opacity: 1;
-            }
-            50%{
-                transform: translateY(0%) ;
-                opacity: 1;
-            }
-            100%{
-                transform: translateY(20%);
-                opacity: 1;
-            }
-        }
 
 .header_content{
 	display: -webkit-box;
@@ -315,6 +282,20 @@ img{
 ==============================================*/
 .banner_area{
 	padding: 0 0 60px;
+	position: relative;
+}
+.common_bn_after{
+	position: relative;
+}
+.common_bn_after::after {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 285px;
+    left: 0;
+    background: url(../images/about-shap.png)no-repeat scroll 0 0 / cover;
+    bottom: 0;
+    z-index: -1;
 }
 
 .banner_text h1{	
